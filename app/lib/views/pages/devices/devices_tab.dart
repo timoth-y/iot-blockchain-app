@@ -5,10 +5,10 @@ import 'package:chainmetric/controllers/devices_controller.dart';
 import 'package:chainmetric/model/device_model.dart';
 import 'package:chainmetric/shared/utils.dart';
 import 'package:chainmetric/views/components/svg_icon.dart';
-import 'package:chainmetric/views/device_form.dart';
+import 'device_form.dart';
 
-import 'components/modal_menu.dart';
-import 'components/navigation_tab.dart';
+import '../../components/modal_menu.dart';
+import '../../components/navigation_tab.dart';
 import 'device_pairing_page.dart';
 
 class DevicesTab extends NavigationTab {

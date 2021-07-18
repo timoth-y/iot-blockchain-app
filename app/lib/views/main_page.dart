@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:chainmetric/shared/utils.dart';
-import 'package:chainmetric/views/devices_tab.dart';
-import 'package:chainmetric/views/home_tab.dart';
-import 'package:chainmetric/views/profile_tab.dart';
-import 'asset_form.dart';
+import 'pages/devices/devices_tab.dart';
+import 'pages/home/home_tab.dart';
+import 'pages/organization/profile_tab.dart';
+import 'pages/assets/asset_form.dart';
 
 import 'components/bottom_app_bar.dart';
 import 'components/navigation_tab.dart';
-import 'assets_tab.dart';
-import 'device_form.dart';
+import 'pages/assets/assets_tab.dart';
+import 'pages/devices/device_form.dart';
 
 class MainPage extends StatefulWidget {
   @override

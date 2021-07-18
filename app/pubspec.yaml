@@ -9,33 +9,41 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  # Dart packages:
   tuple: any
   yaml: ^3.1.0
   reflectable: ^3.0.2
-  permission_handler: ^7.1.0
-  streams_channel: ^0.2.3
   flutter_isolate: ^2.0.0
+  dart_json_mapper: ^2.0.9
+  path_provider: ^2.0.1
+  # Flutter add-ons:
+  auto_size_text:
+  flutter_spinkit: ^4.1.2+1
+  font_awesome_flutter:
+  google_fonts: ^2.1.0
   global_configuration: 2.0.0-nullsafety.1
   flutter_dotenv: ^2.1.0
   shared_preferences: ^2.0.5
-  flutter_reactive_ble: ^3.1.0
-  geolocator: ^7.0.3
-  geocoding: ^2.0.0
-  path_provider: ^2.0.1
-  dart_json_mapper: ^2.0.9
-  file_picker: ^1.3.7
   cupertino_icons: ^1.0.2
+  flutter_svg: ^0.22.0
+  rect_getter: 0.0.1
+  # UI components
+  file_picker: ^1.3.7
   multi_select_flutter: ^2.1.0
   numberpicker: ^2.1.1
   qr_code_scanner: ^0.3.5
   modal_bottom_sheet: ^2.0.0
   overlay_screen: ^1.2.0+1
-  loading_animations: ^2.1.0
-  flutter_svg: ^0.22.0
+  loading_animations: ^2.1.0 # TODO: remove in favor of `flutter_spinkit`
   charts_flutter: ^0.10.0
   smooth_page_indicator: ^0.2.3
-  rect_getter: 0.0.1
   place_picker: ^0.9.19-nullsafety
+  # Platform functionality:
+  permission_handler: ^7.1.0
+  streams_channel: ^0.2.3
+  geolocator: ^7.0.3
+  geocoding: ^2.0.0
+  flutter_reactive_ble: ^3.1.0
 
 dev_dependencies:
   flutter_test:

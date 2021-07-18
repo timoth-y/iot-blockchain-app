@@ -1,16 +1,16 @@
 import 'package:chainmetric/controllers/requirements_controller.dart';
-import 'package:chainmetric/views/readings_page.dart';
+import '../readings/readings_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:chainmetric/controllers/assets_controller.dart';
 import 'package:chainmetric/controllers/references_adapter.dart';
 import 'package:chainmetric/model/asset_model.dart';
 import 'package:chainmetric/shared/utils.dart';
-import 'package:chainmetric/views/asset_form.dart';
+import 'asset_form.dart';
 import 'package:chainmetric/views/components/modal_menu.dart';
-import 'package:chainmetric/views/requirements_form.dart';
+import '../requirements/requirements_form.dart';
 
-import 'components/navigation_tab.dart';
+import '../../components/navigation_tab.dart';
 
 
 class AssetsTab extends NavigationTab {

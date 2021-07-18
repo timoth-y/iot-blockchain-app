@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
-import 'components/navigation_tab.dart';
+import '../../components/navigation_tab.dart';
 
 class ProfileTab extends NavigationTab {
   ProfileTab({GlobalKey key}) : super(key: key ?? GlobalKey());

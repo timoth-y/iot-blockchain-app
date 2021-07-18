@@ -10,7 +10,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_reactive_ble/flutter_reactive_ble.dart';
 import 'package:rect_getter/rect_getter.dart';
 
-import 'components/jumping_dots_indicator.dart';
+import '../../components/jumping_dots_indicator.dart';
 
 class DevicePairing extends StatefulWidget {
   final String deviceID;

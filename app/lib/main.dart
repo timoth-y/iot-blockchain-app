@@ -1,6 +1,7 @@
 import 'package:chainmetric/controllers/bluetooth_adapter.dart';
 import 'package:chainmetric/controllers/gps_adapter.dart';
 import 'package:chainmetric/controllers/preferences_adapter.dart';
+import 'package:chainmetric/main_theme.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:chainmetric/model/readings_model.dart';
 import 'package:dart_json_mapper/dart_json_mapper.dart';
@@ -15,7 +16,7 @@ import 'package:yaml/yaml.dart';
 import 'controllers/references_adapter.dart';
 import 'main.reflectable.dart';
 import 'package:chainmetric/controllers/blockchain_adapter.dart';
-import 'package:chainmetric/views/auth_page.dart';
+import 'views/pages/auth/auth_page.dart';
 import 'package:chainmetric/views/components/loading_splash.dart';
 
 import 'model/asset_model.dart';
@@ -50,25 +51,21 @@ class _AppState extends State<App> {
 
   ThemeData darkTheme = ThemeData(
     brightness: Brightness.dark,
-    backgroundColor: Color.fromARGB(255, 20, 28, 33),
-    scaffoldBackgroundColor: Color.fromARGB(255, 20, 28, 33),
-    primaryColor: Color.fromARGB(255, 24, 43, 50),
-    accentColor: Colors.teal,
+    backgroundColor: AppTheme.primaryBG,
+    scaffoldBackgroundColor: AppTheme.primaryBG,
+    primaryColor: AppTheme.primaryColor,
     primarySwatch: Colors.teal,
     bottomAppBarTheme: BottomAppBarTheme(
-      color: Color.fromARGB(255, 24, 43, 50),
+      color: AppTheme.appBarBG,
     ),
-    cardColor: Color.fromARGB(255, 30, 54, 64),
-
-    // Define the default TextTheme. Use this to specify the default
-    // text styling for headlines, titles, bodies of text, and more.
+    cardColor: AppTheme.cardBG,
     textTheme: TextTheme(
       headline1: TextStyle(fontSize: 72.0, fontWeight: FontWeight.bold),
       headline6: TextStyle(fontSize: 36.0, fontStyle: FontStyle.italic),
       bodyText2: TextStyle(fontSize: 14.0, fontFamily: 'Hind'),
     ),
     inputDecorationTheme: InputDecorationTheme(
-      fillColor: Color.fromARGB(255, 30, 54, 64),
+      fillColor: AppTheme.inputBG,
     )
   );
 
@@ -81,7 +78,7 @@ class _AppState extends State<App> {
       home: _isLoading
           ? LoadingSplash()
           : _requireAuth
-              ? AuthPage(submitAuth: _initBackend,)
+              ? AuthPage(submitAuth: _initBackend)
               : MainPage(),
     );
   }
